@@ -5,7 +5,7 @@
 
 ## Run Locally
 -> Git clone "whatever URL"
--> npm run dev go to the port 
+-> npm install, npm start, npm run build go to the port 
 -> Accepts requests when backend is running and your images are up and running
 
 ```md
@@ -18,6 +18,21 @@ React-based UI to submit dataset generation requests and track Airflow pipeline 
 ---
 
 ## Architecture
+```text
+Input Form
+   │
+   ▼
+Submit Button
+   │
+   ▼
+FastAPI Request
+   │
+   ▼
+Status Panel
+   │
+   ▼
+Progress Bar
+
 
 ```text
 React UI
@@ -27,3 +42,6 @@ FastAPI Backend
    │
    ▼
 Airflow Pipeline
+
+
+
